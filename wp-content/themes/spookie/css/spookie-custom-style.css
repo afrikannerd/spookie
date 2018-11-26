@@ -1,0 +1,123 @@
+/*
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+font-family: 'Lora', serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Lobster', cursive;
+font-family: 'Bree Serif', serif;
+font-family: 'Cormorant Upright', serif;
+*/
+/* 
+    Created on : Nov 21, 2018, 4:09:19 PM
+    Author     : nerd
+*/
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 21, 2018, 7:18:33 PM
+    Author     : nerd
+*/
+.site-branding .site_branding__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 65px; }
+
+body {
+  background: #ffffff; }
+
+.site-header {
+  position: relative;
+  padding: 1em;
+  font-family: "Sans Serif";
+  color: #fff;
+  background-color: #002254; }
+  .site-header a {
+    color: #fff;
+    text-decoration: none;
+    font-family: "Ubuntu",sans-serif; }
+
+.site-branding {
+  min-height: 65px;
+  display: flex; }
+  .site-branding .custom-logo-link {
+    margin-right: 1em; }
+    .site-branding .custom-logo-link img {
+      display: block;
+      height: 65px;
+      width: auto; }
+
+.site-title {
+  margin: 0;
+  padding: 0;
+  font-size: 1.6em;
+  font-weight: 900;
+  line-height: 1em; }
+  .site-title a {
+    color: #fff;
+    text-decoration: none; }
+    .site-title a:hover, .site-title a:focus {
+      text-decoration: underline; }
+
+.site-description {
+  margin: 0;
+  font-size: .9em;
+  font-style: italic;
+  font-weight: 100; }
+
+@media screen and (min-width: 1280px) {
+  .site-header {
+    display: flex;
+    justify-content: space-between; }
+
+  .site-branding {
+    width: 35%;
+    flex: 1 0 auto; }
+
+  #site-navigation {
+    width: 55%; } }
+/*.sub-menu *{
+        .menu-item-has-children,ul{
+            display: flex;
+            flex-direction: column;
+        }
+        
+        
+    }*/
+@media screen and (min-width: 37.5em) {
+  .main-navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 65px; }
+    .main-navigation .nav-menu {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row; }
+      .main-navigation .nav-menu.dropdown-menu {
+        justify-content: center;
+        width: inherit;
+        padding: 5px;
+        border-radius: 0; } }
+.dropdown-menu {
+  justify-content: center;
+  width: 20vw;
+  font-size: small;
+  padding: 5px;
+  border-radius: 0; }
+
+figure {
+  margin: 0; }
+
+.header-image {
+  max-height: 60vh;
+  overflow: hidden; }
+  .header-image img {
+    display: block;
+    width: 100vw; }
+
+/*# sourceMappingURL=spookie-custom-style.css.map */

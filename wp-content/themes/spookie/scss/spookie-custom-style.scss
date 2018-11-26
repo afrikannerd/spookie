@@ -1,0 +1,156 @@
+/*
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+font-family: 'Lora', serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Lobster', cursive;
+font-family: 'Bree Serif', serif;
+font-family: 'Cormorant Upright', serif;
+*/
+/* 
+    Created on : Nov 21, 2018, 4:09:19 PM
+    Author     : nerd
+*/
+@import 'spookie-colors';
+
+@mixin shared_centering_for_header{
+    display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 65px;
+}
+
+%shared_centering_for_header{
+    @include shared_centering_for_header;
+}
+body{
+    background: $color_bg_body;
+}
+
+.site-header{
+    position: relative;
+    padding: 1em;
+    font-family:"Sans Serif"; 
+    color:#fff;
+    background-color: $color_header;
+    
+    a{
+        color: #fff;
+        text-decoration: none;
+        font-family: "Ubuntu",sans-serif;
+    }
+    
+}
+
+.site-branding{
+    min-height: 65px;
+    display:flex;
+    
+    .custom-logo-link{
+        margin-right:1em;
+        img{
+            display: block;
+            height: 65px;
+            width: auto;
+                
+        }
+    }
+    
+    .site_branding__text{
+        @extend %shared_centering_for_header;
+    }
+}
+
+.site-title{
+    margin: 0;
+    padding: 0;
+    font-size: 1.6em;
+    font-weight: 900;
+    line-height: 1em;
+    
+    a{
+        color: #fff;
+        text-decoration: none;
+        &:hover,&:focus{
+            text-decoration: underline;
+        }
+    }
+}
+
+.site-description{
+    margin: 0;font-size: .9em;
+    font-style: italic;
+    font-weight: 100
+}
+
+@media screen and (min-width:1280px){
+    .site-header{
+        display: flex;
+        justify-content: space-between;
+        }
+        .site-branding{
+            width: 35%;
+            flex: 1 0 auto;
+        }
+        #site-navigation{
+            width: 55%;
+        }
+        
+       
+}
+
+/*.sub-menu *{
+        .menu-item-has-children,ul{
+            display: flex;
+            flex-direction: column;
+        }
+        
+        
+    }*/
+    
+@media screen and (min-width:37.5em)
+{
+    .main-navigation{
+        @include shared_centering_for_header;
+        .nav-menu{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            &.dropdown-menu{
+                justify-content: center;
+                width: inherit;
+                padding: 5px;
+                border-radius: 0;
+                
+            }
+            
+        }
+        
+        
+    }
+    
+    
+}
+.dropdown-menu{
+                justify-content: center;
+                width: 20vw;
+                font-size: small;
+                padding: 5px;
+                border-radius: 0;}
+              
+figure{
+    margin: 0;
+}
+
+.header-image{
+    max-height:60vh;
+    overflow:hidden;
+    img{
+        display: block;
+        width: 100vw;
+        
+    }
+}
+
+//@import "../sass/navigation/menus";
